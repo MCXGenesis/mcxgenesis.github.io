@@ -1,9 +1,11 @@
 ---
 title: Hello, Welcome
-description: An introduction to using the note feature in Astro Cactus
-publishDate: "2024-10-14T11:23:00Z"
+description: Building my own web!!!
+publishDate: "2026-07-14T09:17:32Z"
 ---
 
-Hi, Hello. This is an example note feature included with Astro Cactus 🌵
+Hi, Hello. I'm building my own web, intended for my portfolio.
 
-They're for shorter, more concise posts that you'd like to share. They generally don't include headings, but hey, it's entirely up to you!
+Work in progress.
+
+Stay hungry, stay foolish
