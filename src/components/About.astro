@@ -1,0 +1,107 @@
+---
+import { Icon } from "astro-icon/components";
+import SocialList from "@/components/SocialList.astro";
+---
+
+<div class="mx-auto max-w-3xl px-4 py-8">
+	<!-- Hero Section -->
+	<section class="mb-12 flex flex-col items-center gap-6 sm:flex-row sm:items-start">
+		<!-- Profile Photo -->
+		<div class="shrink-0">
+			<img
+				src="/assets/profile.jpg"
+				alt="Your Name"
+				class="h-32 w-32 rounded-full object-cover ring-4 ring-zinc-200 dark:ring-zinc-700"
+			/>
+		</div>
+
+		<!-- Introduction -->
+		<div class="text-center sm:text-left">
+			<h1 class="text-3xl font-bold">Naufal Maula Nabil</h1>
+			<p class="mt-1 text-lg text-zinc-600 dark:text-zinc-400">
+				Student · Developer · DevOps Enthusiast
+			</p>
+			<p class="mt-3 text-zinc-700 dark:text-zinc-300">
+				I'm a Information Systems student at ITS with a passion for building scalable applications
+				and automating workflows. Currently exploring cloud infrastructure, CI/CD, and full-stack
+				development.
+			</p>
+			<!-- Social Links -->
+			<div class="mt-4 flex justify-center gap-3 sm:justify-start">
+				<SocialList />
+			</div>
+		</div>
+	</section>
+
+	<!-- Skills Section -->
+	<section class="mb-12">
+		<h2 class="mb-4 text-2xl font-semibold">🛠️ Tech Stack</h2>
+		<div class="grid grid-cols-2 gap-3 sm:grid-cols-4">
+			<div class="rounded-lg border border-zinc-200 p-3 text-center dark:border-zinc-700">
+				<Icon name="logos:react" class="mx-auto h-8 w-8" />
+				<span class="mt-1 block text-sm">React</span>
+			</div>
+			<div class="rounded-lg border border-zinc-200 p-3 text-center dark:border-zinc-700">
+				<Icon name="logos:flutter" class="mx-auto h-8 w-8" />
+				<span class="mt-1 block text-sm">Flutter</span>
+			</div>
+			<div class="rounded-lg border border-zinc-200 p-3 text-center dark:border-zinc-700">
+				<Icon name="logos:docker" class="mx-auto h-8 w-8" />
+				<span class="mt-1 block text-sm">Docker</span>
+			</div>
+			<div class="rounded-lg border border-zinc-200 p-3 text-center dark:border-zinc-700">
+				<Icon name="logos:google-cloud" class="mx-auto h-8 w-8" />
+				<span class="mt-1 block text-sm">GCP</span>
+			</div>
+			<div class="rounded-lg border border-zinc-200 p-3 text-center dark:border-zinc-700">
+				<Icon name="logos:github-actions" class="mx-auto h-8 w-8" />
+				<span class="mt-1 block text-sm">GitHub Actions</span>
+			</div>
+			<div class="rounded-lg border border-zinc-200 p-3 text-center dark:border-zinc-700">
+				<Icon name="logos:supabase" class="mx-auto h-8 w-8" />
+				<span class="mt-1 block text-sm">Supabase</span>
+			</div>
+		</div>
+	</section>
+
+	<!-- Featured Projects -->
+	<section class="mb-12">
+		<h2 class="mb-4 text-2xl font-semibold">🚀 Featured Projects</h2>
+		<div class="space-y-4">
+			<div class="rounded-lg border border-zinc-200 p-4 dark:border-zinc-700">
+				<h3 class="text-lg font-medium">
+					<a href="/posts/devops-pipeline-ayotani" class="hover:underline">
+						AyoTani CI/CD Pipeline
+					</a>
+				</h3>
+				<p class="text-sm text-zinc-600 dark:text-zinc-400">
+					Automated linting, testing, containerisation, and deployment of a Flutter agritech app to
+					Google Cloud Run.
+				</p>
+				<div class="mt-2 flex flex-wrap gap-2">
+					<span class="rounded-full bg-zinc-100 px-2 py-0.5 text-xs dark:bg-zinc-800">DevOps</span>
+					<span class="rounded-full bg-zinc-100 px-2 py-0.5 text-xs dark:bg-zinc-800">GCP</span>
+					<span class="rounded-full bg-zinc-100 px-2 py-0.5 text-xs dark:bg-zinc-800">Flutter</span>
+				</div>
+			</div>
+			<!-- Add more projects here -->
+		</div>
+	</section>
+
+	<!-- Contact -->
+	<section>
+		<h2 class="mb-4 text-2xl font-semibold">📫 Let's Connect</h2>
+		<p class="text-zinc-700 dark:text-zinc-300">
+			I'm always open to new opportunities, collaborations, or just a chat. Reach out to me on
+			<a
+				href="https://linkedin.com/in/your-profile"
+				class="text-blue-600 hover:underline dark:text-blue-400">LinkedIn</a
+			>
+			or
+			<a
+				href="mailto:youremail@example.com"
+				class="text-blue-600 hover:underline dark:text-blue-400">email</a
+			>.
+		</p>
+	</section>
+</div>
