@@ -1,6 +1,7 @@
 ---
 import { Icon } from "astro-icon/components";
 import SocialList from "@/components/SocialList.astro";
+import ProjectCard from "@/components/ProjectCard.astro";
 ---
 
 <div class="mx-auto max-w-3xl px-4 py-8">
@@ -9,7 +10,7 @@ import SocialList from "@/components/SocialList.astro";
 		<!-- Profile Photo -->
 		<div class="shrink-0">
 			<img
-				src="/assets/profile.jpg"
+				src="@/assets/profile.jpeg"
 				alt="Your Name"
 				class="h-32 w-32 rounded-full object-cover ring-4 ring-zinc-200 dark:ring-zinc-700"
 			/>
@@ -27,9 +28,9 @@ import SocialList from "@/components/SocialList.astro";
 				development.
 			</p>
 			<!-- Social Links -->
-			<div class="mt-4 flex justify-center gap-3 sm:justify-start">
+			<!-- <div class="mt-4 flex justify-center gap-3 sm:justify-start">
 				<SocialList />
-			</div>
+			</div> -->
 		</div>
 	</section>
 
@@ -68,23 +69,25 @@ import SocialList from "@/components/SocialList.astro";
 	<section class="mb-12">
 		<h2 class="mb-4 text-2xl font-semibold">🚀 Featured Projects</h2>
 		<div class="space-y-4">
-			<div class="rounded-lg border border-zinc-200 p-4 dark:border-zinc-700">
-				<h3 class="text-lg font-medium">
-					<a href="/posts/devops-pipeline-ayotani" class="hover:underline">
-						AyoTani CI/CD Pipeline
-					</a>
-				</h3>
-				<p class="text-sm text-zinc-600 dark:text-zinc-400">
-					Automated linting, testing, containerisation, and deployment of a Flutter agritech app to
-					Google Cloud Run.
-				</p>
-				<div class="mt-2 flex flex-wrap gap-2">
-					<span class="rounded-full bg-zinc-100 px-2 py-0.5 text-xs dark:bg-zinc-800">DevOps</span>
-					<span class="rounded-full bg-zinc-100 px-2 py-0.5 text-xs dark:bg-zinc-800">GCP</span>
-					<span class="rounded-full bg-zinc-100 px-2 py-0.5 text-xs dark:bg-zinc-800">Flutter</span>
-				</div>
-			</div>
+			<ProjectCard
+				title="AyoTani CI/CD Pipeline"
+				description="Automated linting, testing, containerisation, and deployment of a Flutter agritech app to Google Cloud Run."
+				url="/posts/academic-projects/pso"
+				tags={["DevOps", "GCP", "Flutter"]}
+			/>
 			<!-- Add more projects here -->
+			<ProjectCard
+				title="Pertamina Patra Niaga Network Monitoring Alerting"
+				description="Automated linting, testing, containerisation, and deployment of a Flutter agritech app to Google Cloud Run."
+				url="/posts/projects/pertamina-rjbt"
+				tags={["DevOps", "GCP", "Flutter"]}
+			/>
+			<ProjectCard
+				title="Surabaya Sidoarjo Rail Bridge Route Optimization"
+				description="Automated linting, testing, containerisation, and deployment of a Flutter agritech app to Google Cloud Run."
+				url="/posts/academic-projects/soft-computing"
+				tags={["DevOps", "GCP", "Flutter"]}
+			/>
 		</div>
 	</section>
 
@@ -93,7 +96,7 @@ import SocialList from "@/components/SocialList.astro";
 		<h2 class="mb-4 text-2xl font-semibold">📫 Let's Connect</h2>
 		<p class="text-zinc-700 dark:text-zinc-300">
 			I'm always open to new opportunities, collaborations, or just a chat. Reach out to me on
-			<a
+			<!-- <a
 				href="https://linkedin.com/in/your-profile"
 				class="text-blue-600 hover:underline dark:text-blue-400">LinkedIn</a
 			>
@@ -101,7 +104,10 @@ import SocialList from "@/components/SocialList.astro";
 			<a
 				href="mailto:youremail@example.com"
 				class="text-blue-600 hover:underline dark:text-blue-400">email</a
-			>.
+			>. -->
+			<div class="space-y-4">
+				<SocialList />
+			</div>
 		</p>
 	</section>
 </div>

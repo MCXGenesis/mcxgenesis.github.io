@@ -1,0 +1,30 @@
+---
+export interface Props {
+	title: string;
+	description: string;
+	url: string;
+	tags: string[];
+}
+
+const { title, description, url, tags } = Astro.props;
+---
+
+<div
+	class="rounded-lg border border-zinc-200 p-4 transition-colors hover:border-zinc-300 dark:border-zinc-700 dark:hover:border-zinc-600"
+>
+	<h3 class="text-lg font-medium">
+		<a href={url} class="hover:underline">
+			{title}
+		</a>
+	</h3>
+	<p class="text-sm text-zinc-600 dark:text-zinc-400">
+		{description}
+	</p>
+	<div class="mt-2 flex flex-wrap gap-2">
+		{
+			tags.map((tag) => (
+				<span class="rounded-full bg-zinc-100 px-2 py-0.5 text-xs dark:bg-zinc-800">{tag}</span>
+			))
+		}
+	</div>
+</div>
